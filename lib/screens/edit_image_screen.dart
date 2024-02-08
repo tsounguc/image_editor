@@ -31,9 +31,7 @@ class _EditImageScreenState extends EditImageViewModel {
                   onLongPress: () {
                     print('long press detected');
                   },
-                  onTap: () {
-                    print('sngle press detected');
-                  },
+                  onTap: () => setCurrentIndex(context, i),
                   child: Draggable(
                     feedback: ImageText(textInfo: texts[i]),
                     child: ImageText(textInfo: texts[i]),
