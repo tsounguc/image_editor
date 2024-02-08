@@ -126,17 +126,17 @@ class _EditImageScreenState extends EditImageViewModel {
               ),
               IconButton(
                 icon: const Icon(Icons.format_bold, color: Colors.black),
-                onPressed: () {},
+                onPressed: () => boldText(),
                 tooltip: 'Bold',
               ),
               IconButton(
                 icon: const Icon(Icons.format_italic, color: Colors.black),
-                onPressed: () {},
+                onPressed: () => italizeText(),
                 tooltip: 'Italic',
               ),
               IconButton(
                 icon: const Icon(Icons.space_bar, color: Colors.black),
-                onPressed: () {},
+                onPressed: () => addLinesToText(),
                 tooltip: 'Add New Line',
               ),
               Tooltip(
