@@ -100,28 +100,28 @@ class _EditImageScreenState extends EditImageViewModel {
               ),
               IconButton(
                 icon: const Icon(Icons.add, color: Colors.black),
-                onPressed: () {},
+                onPressed: () => increaseFontSize(),
                 tooltip: 'Increase font size',
               ),
               IconButton(
                 icon: const Icon(Icons.remove, color: Colors.black),
-                onPressed: () {},
+                onPressed: () => decreaseFontSize(),
                 tooltip: 'Decrease font size',
               ),
               IconButton(
-                icon: const Icon(Icons.format_align_right, color: Colors.black),
-                onPressed: () {},
+                icon: const Icon(Icons.format_align_left, color: Colors.black),
+                onPressed: () => alignLeft(),
                 tooltip: 'Align Left',
               ),
               IconButton(
                 icon:
                     const Icon(Icons.format_align_center, color: Colors.black),
-                onPressed: () {},
+                onPressed: () => alignCenter(),
                 tooltip: 'Align Center',
               ),
               IconButton(
                 icon: const Icon(Icons.format_align_right, color: Colors.black),
-                onPressed: () {},
+                onPressed: () => alignRight(),
                 tooltip: 'Align Right',
               ),
               IconButton(

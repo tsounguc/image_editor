@@ -25,11 +25,43 @@ abstract class EditImageViewModel extends State<EditImageScreen> {
     );
   }
 
-  changeTextColor(Color color){
+  changeTextColor(Color color) {
     setState(() {
       texts[currentIndex].color = color;
     });
   }
+
+  increaseFontSize() {
+    setState(() {
+      texts[currentIndex].fontSize += 2;
+    });
+  }
+
+  decreaseFontSize() {
+    setState(() {
+      texts[currentIndex].fontSize -= 2;
+    });
+  }
+
+  alignLeft() {
+    setState(() {
+      texts[currentIndex].textAlign = TextAlign.left;
+    });
+  }
+
+  alignCenter() {
+    setState(() {
+      texts[currentIndex].textAlign = TextAlign.center;
+    });
+  }
+
+  alignRight() {
+    setState(() {
+      texts[currentIndex].textAlign = TextAlign.right;
+    });
+  }
+
+  
 
   addNewText(BuildContext context) {
     setState(() {
