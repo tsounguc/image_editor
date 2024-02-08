@@ -29,7 +29,10 @@ class _EditImageScreenState extends EditImageViewModel {
                 top: texts[i].top,
                 child: GestureDetector(
                   onLongPress: () {
-                    print('long press detected');
+                    setState(() {
+                      currentIndex = i;
+                      removeText(context);
+                    });
                   },
                   onTap: () => setCurrentIndex(context, i),
                   child: Draggable(
